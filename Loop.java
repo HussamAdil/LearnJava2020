@@ -6,6 +6,12 @@ public class Loop {
         ArrayList<String> names = new ArrayList<>();
         names.add("Hussam");
         String firstName = names.get(0);
-    System.out.println(firstName);
+
+        // Customer for cup
+        Cup cup = new Cup();
+
+        cup.setLiquidType("lemon");
+
+        System.out.println(cup.getAmount());
     }
 }
