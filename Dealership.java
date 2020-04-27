@@ -8,9 +8,9 @@ public class Dealership {
 	 Employee employee = new Employee("hussam" ,"hussam");
 	 
 	 Vehicle ve = new Vehicle();
-	 
-	 
-	 
+
+
+
 	}
 
 }
