@@ -1,3 +1,4 @@
+import java.util.ArrayList;
 import java.util.HashMap;
 
 public class FindLongestString {
@@ -10,6 +11,8 @@ public class FindLongestString {
         String employees[] = {"omer", "Hussam", "ali"};
 
         for (int i = 0; i <= employees.length - 1; i++) {
+
+
           }
 
     }
