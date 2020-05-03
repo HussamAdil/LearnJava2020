@@ -1,10 +1,11 @@
 public class Shop  {
 
-
     public static void main(String[] args) {
         Laptop laptop = new Laptop() ;
+        // comment
         laptop.pay();
      }
+
 }
 class Laptop implements Pay {
     int price = 1000 ;
