@@ -1,3 +1,4 @@
+
 public class Counter {
 public static int instanceCount ;
     public Counter()
@@ -6,7 +7,8 @@ public static int instanceCount ;
     }
     public int getInstanceCount()
     {
-        return instanceCount;
+         return instanceCount;
     }
+
 
 }
