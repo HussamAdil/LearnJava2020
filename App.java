@@ -5,6 +5,12 @@ public class App {
 
             // exception
             ExceptionCatcher ec = new ExceptionCatcher();
-            ec.div(15,3);
+            // ec.div(15,3);
+
+
+            // Factorial
+        Factorial factorial = new Factorial();
+
+        System.out.println(factorial.getFactorial(8));
     }
 }
