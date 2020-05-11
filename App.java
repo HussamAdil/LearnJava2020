@@ -8,9 +8,14 @@ public class App {
             // ec.div(15,3);
 
 
-            // Factorial
+            // Factorial example
         Factorial factorial = new Factorial();
 
-        System.out.println(factorial.getFactorial(8));
+        // tweet example
+
+        Tweet t = new Tweet("Hussam","Java ");
+        t.reply("omer","node.js");
+        t.retweet("ali" , "vue.js");
+
     }
 }
