@@ -1,4 +1,4 @@
-public interface plugin {
+public interface Plugin {
     public void loadPlugin();
 
     public void runPlugin();
