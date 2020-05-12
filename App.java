@@ -17,7 +17,12 @@ public class App {
         t.reply("omer","node.js");
         t.retweet("ali" , "vue.js");
 
-        //
+        // plugin
+        WebApp webApp = new WebApp();
+        PdfPlugin pdfPlugin = new PdfPlugin();
+        webApp.load(pdfPlugin);
+        webApp.run(pdfPlugin);
+        webApp.close(pdfPlugin);
 
     }
 }
