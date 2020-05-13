@@ -24,5 +24,28 @@ public class App {
         webApp.run(pdfPlugin);
         webApp.close(pdfPlugin);
 
+        // Anonymous class
+        // via variable
+        Plugin anonymousClaSS = new Plugin(){
+
+            @Override
+            public void loadPlugin() {
+                System.out.println("loaded from anonymous claSS");
+            }
+
+            @Override
+            public void runPlugin() {
+                System.out.println("done from anonymous claSS");
+            }
+
+            @Override
+            public void closePlugin() {
+                System.out.println("closed from anonymous claSS");
+            }
+        };
+        WebApp webApp2 = new WebApp();
+        webApp2.run(anonymousClaSS);
+        webApp2.load(anonymousClaSS);
+        webApp2.close(anonymousClaSS);
     }
 }
