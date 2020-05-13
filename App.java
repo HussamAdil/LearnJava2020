@@ -25,27 +25,82 @@ public class App {
         webApp.close(pdfPlugin);
 
         // Anonymous class
+
         // via variable
-        Plugin anonymousClaSS = new Plugin(){
+        Plugin anonymousClass = new Plugin(){
 
             @Override
             public void loadPlugin() {
-                System.out.println("loaded from anonymous claSS");
+                System.out.println("loaded from anonymous class using variable ");
             }
 
             @Override
             public void runPlugin() {
-                System.out.println("done from anonymous claSS");
+                System.out.println("done from anonymous class using variable ");
             }
 
             @Override
             public void closePlugin() {
-                System.out.println("closed from anonymous claSS");
+                System.out.println("closed from anonymous class using variable ");
             }
         };
-        WebApp webApp2 = new WebApp();
-        webApp2.run(anonymousClaSS);
-        webApp2.load(anonymousClaSS);
-        webApp2.close(anonymousClaSS);
+         webApp.run(anonymousClass);
+        webApp.load(anonymousClass);
+        webApp.close(anonymousClass);
+        // direct anonymous class
+         webApp.run( new Plugin(){
+
+            @Override
+            public void loadPlugin() {
+                System.out.println("loaded from anonymous class direct ");
+            }
+
+            @Override
+            public void runPlugin() {
+                System.out.println("done from anonymous class direct");
+            }
+
+            @Override
+            public void closePlugin() {
+                System.out.println("closed from anonymous class direct");
+            }
+        });
+
+
+        webApp.load( new Plugin(){
+
+            @Override
+            public void loadPlugin() {
+                System.out.println("loaded from anonymous class direct");
+            }
+
+            @Override
+            public void runPlugin() {
+                System.out.println("done from anonymous  class direct");
+            }
+
+            @Override
+            public void closePlugin() {
+                System.out.println("closed from class direct");
+            }
+        });
+        webApp.close( new Plugin(){
+
+
+            @Override
+            public void loadPlugin() {
+                System.out.println("loaded from anonymous class direct");
+            }
+
+            @Override
+            public void runPlugin() {
+                System.out.println("done from anonymous  class direct");
+            }
+
+            @Override
+            public void closePlugin() {
+                System.out.println("closed from class direct");
+            }
+        });
     }
 }
