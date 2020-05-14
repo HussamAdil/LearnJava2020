@@ -4,12 +4,12 @@ public class OuterClass {
 
     static class StaticInner {
 
-
         public StaticInner()
         {
             System.out.println("from static inner ");
+            justPrint();
         }
-        public void justPrint()
+        public static void justPrint()
         {
             System.out.println("from static inner ");
         }
@@ -17,9 +17,11 @@ public class OuterClass {
     public  class NonStaticInner{
        public NonStaticInner()
        {
-           System.out.println(num2);
-           System.out.println("from non static inner ");
+            System.out.println("from non static inner ");
        }
-
+        public void justPrint()
+        {
+            System.out.println("from static inner ");
+        }
     }
 }

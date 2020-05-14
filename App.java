@@ -108,6 +108,7 @@ public class App {
 
     // Outer & inner class
     OuterClass outerClass = new OuterClass();
-    OuterClass.StaticInner si = new OuterClass.StaticInner();
+    OuterClass.StaticInner staticInner = new OuterClass.StaticInner();
+    OuterClass.NonStaticInner nonsi = outerClass.new NonStaticInner();
 
- }
+}
