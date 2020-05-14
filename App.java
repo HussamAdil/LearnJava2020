@@ -1,4 +1,6 @@
 public class App {
+
+
     public static void main(String[] args) {
        Employee em = new Employee("Hussam" , 5000);
         Account ac =new Account(em);
@@ -103,4 +105,9 @@ public class App {
             }
         });
     }
-}
+
+    // Outer & inner class
+    OuterClass outerClass = new OuterClass();
+    OuterClass.StaticInner si = new OuterClass.StaticInner();
+
+ }
