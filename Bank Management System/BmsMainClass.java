@@ -18,7 +18,12 @@ In this bank management system project in C, file handling has been used for alm
 
 
  */
-
+/*
+    Classes :
+    - Customer
+    - account
+    - Control
+ */
 import java.util.Scanner;
 
 public class BmsMainClass   {
