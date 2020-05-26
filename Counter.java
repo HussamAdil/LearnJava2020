@@ -1,13 +1,13 @@
 
 public class Counter {
-public static int instanceCount ;
-    public Counter()
-    {
+    public static int instanceCount;
+
+    public Counter() {
         instanceCount++;
     }
-    public int getInstanceCount()
-    {
-         return instanceCount;
+
+    public int getInstanceCount() {
+        return instanceCount;
     }
 
 
